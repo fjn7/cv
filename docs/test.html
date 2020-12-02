@@ -8,7 +8,7 @@
         background-image: url("images/fjn7dev.png");
         width: 100%;
         height: 500px;
-        background-attachment: scroll;
+        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -16,6 +16,12 @@
 
     .first-block {
         width: 100%;
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        .parallax {
+            background-attachment: scroll;
+        }
     }
 
 </style>
